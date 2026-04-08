@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   n8n:
-    image: https://github.com/rdonmez/n8n-docker.git
+    build: https://github.com/rdonmez/n8n-docker.git
     restart: unless-stopped
     ports:
       - "5678:5678"
